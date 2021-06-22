@@ -1,0 +1,323 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>code package &#8212; BPP_Practica3 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="code.dao package" href="code.dao.html" />
+    <link rel="prev" title="code" href="modules.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="code.dao.html" title="code.dao package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="code"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">BPP_Practica3 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">code package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="code-package">
+<h1>code package<a class="headerlink" href="#code-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="code.dao.html">code.dao package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="code.dao.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.dao.html#code-dao-carsdao-module">code.dao.CarsDAO module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.dao.html#code-dao-peopledao-module">code.dao.PeopleDAO module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.dao.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="code.model.html">code.model package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="code.model.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.model.html#code-model-car-module">code.model.Car module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.model.html#code-model-person-module">code.model.Person module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.model.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="code-main-module">
+<h2>code.Main module<a class="headerlink" href="#code-main-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-code">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-code" title="Permalink to this headline">¶</a></h2>
+<p>Utilities needed to emulate Python’s interactive interpreter.</p>
+<dl class="py class">
+<dt id="code.InteractiveConsole">
+<em class="property">class </em><code class="sig-prename descclassname">code.</code><code class="sig-name descname">InteractiveConsole</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">locals</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">'&lt;console&gt;'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveConsole" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#code.InteractiveInterpreter" title="code.InteractiveInterpreter"><code class="xref py py-class docutils literal notranslate"><span class="pre">code.InteractiveInterpreter</span></code></a></p>
+<p>Closely emulate the behavior of the interactive Python interpreter.</p>
+<p>This class builds on InteractiveInterpreter and adds prompting
+using the familiar sys.ps1 and sys.ps2, and input buffering.</p>
+<dl class="py method">
+<dt id="code.InteractiveConsole.interact">
+<code class="sig-name descname">interact</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">banner</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">exitmsg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveConsole.interact" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closely emulate the interactive Python console.</p>
+<p>The optional banner argument specifies the banner to print
+before the first interaction; by default it prints a banner
+similar to the one printed by the real Python interpreter,
+followed by the current class name in parentheses (so as not
+to confuse this with the real interpreter – since it’s so
+close!).</p>
+<p>The optional exitmsg argument specifies the exit message
+printed when exiting. Pass the empty string to suppress
+printing an exit message. If exitmsg is not given or None,
+a default message is printed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="code.InteractiveConsole.push">
+<code class="sig-name descname">push</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">line</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveConsole.push" title="Permalink to this definition">¶</a></dt>
+<dd><p>Push a line to the interpreter.</p>
+<p>The line should not have a trailing newline; it may have
+internal newlines.  The line is appended to a buffer and the
+interpreter’s runsource() method is called with the
+concatenated contents of the buffer as source.  If this
+indicates that the command was executed or invalid, the buffer
+is reset; otherwise, the command is incomplete, and the buffer
+is left as it was after the line was appended.  The return
+value is 1 if more input is required, 0 if the line was dealt
+with in some way (this is the same as runsource()).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="code.InteractiveConsole.raw_input">
+<code class="sig-name descname">raw_input</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">prompt</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveConsole.raw_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write a prompt and read a line.</p>
+<p>The returned line does not include the trailing newline.
+When the user enters the EOF key sequence, EOFError is raised.</p>
+<p>The base implementation uses the built-in function
+input(); a subclass may replace this with a different
+implementation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="code.InteractiveConsole.resetbuffer">
+<code class="sig-name descname">resetbuffer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveConsole.resetbuffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset the input buffer.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="code.InteractiveInterpreter">
+<em class="property">class </em><code class="sig-prename descclassname">code.</code><code class="sig-name descname">InteractiveInterpreter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">locals</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveInterpreter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base class for InteractiveConsole.</p>
+<p>This class deals with parsing and interpreter state (the user’s
+namespace); it doesn’t deal with input buffering or prompting or
+input file naming (the filename is always passed in explicitly).</p>
+<dl class="py method">
+<dt id="code.InteractiveInterpreter.runcode">
+<code class="sig-name descname">runcode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">code</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveInterpreter.runcode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute a code object.</p>
+<p>When an exception occurs, self.showtraceback() is called to
+display a traceback.  All exceptions are caught except
+SystemExit, which is reraised.</p>
+<p>A note about KeyboardInterrupt: this exception may occur
+elsewhere in this code, and may not always be caught.  The
+caller should be prepared to deal with it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="code.InteractiveInterpreter.runsource">
+<code class="sig-name descname">runsource</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">source</span></em>, <em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">'&lt;input&gt;'</span></em>, <em class="sig-param"><span class="n">symbol</span><span class="o">=</span><span class="default_value">'single'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveInterpreter.runsource" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compile and run some source in the interpreter.</p>
+<p>Arguments are as for compile_command().</p>
+<p>One of several things can happen:</p>
+<p>1) The input is incorrect; compile_command() raised an
+exception (SyntaxError or OverflowError).  A syntax traceback
+will be printed by calling the showsyntaxerror() method.</p>
+<p>2) The input is incomplete, and more input is required;
+compile_command() returned None.  Nothing happens.</p>
+<p>3) The input is complete; compile_command() returned a code
+object.  The code is executed by calling self.runcode() (which
+also handles run-time exceptions, except for SystemExit).</p>
+<p>The return value is True in case 2, False in the other cases (unless
+an exception is raised).  The return value can be used to
+decide whether to use sys.ps1 or sys.ps2 to prompt the next
+line.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="code.InteractiveInterpreter.showsyntaxerror">
+<code class="sig-name descname">showsyntaxerror</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveInterpreter.showsyntaxerror" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display the syntax error that just occurred.</p>
+<p>This doesn’t display a stack trace because there isn’t one.</p>
+<p>If a filename is given, it is stuffed in the exception instead
+of what was there before (because Python’s parser always uses
+“&lt;string&gt;” when reading from a string).</p>
+<p>The output is written by self.write(), below.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="code.InteractiveInterpreter.showtraceback">
+<code class="sig-name descname">showtraceback</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveInterpreter.showtraceback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display the exception that just occurred.</p>
+<p>We remove the first stack item because it is our own code.</p>
+<p>The output is written by self.write(), below.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="code.InteractiveInterpreter.write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.InteractiveInterpreter.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write a string.</p>
+<p>The base implementation writes to sys.stderr; a subclass may
+replace this with a different implementation.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="code.compile_command">
+<code class="sig-prename descclassname">code.</code><code class="sig-name descname">compile_command</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">source</span></em>, <em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">'&lt;input&gt;'</span></em>, <em class="sig-param"><span class="n">symbol</span><span class="o">=</span><span class="default_value">'single'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.compile_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compile a command and determine whether it is incomplete.</p>
+<p>Arguments:</p>
+<p>source – the source string; may contain n characters
+filename – optional filename from which source was read; default</p>
+<blockquote>
+<div><p>“&lt;input&gt;”</p>
+</div></blockquote>
+<dl class="simple">
+<dt>symbol – optional grammar start symbol; “single” (default), “exec”</dt><dd><p>or “eval”</p>
+</dd>
+</dl>
+<p>Return value / exceptions raised:</p>
+<ul class="simple">
+<li><p>Return a code object if the command is complete and valid</p></li>
+<li><p>Return None if the command is incomplete</p></li>
+<li><p>Raise SyntaxError, ValueError or OverflowError if the command is a
+syntax error (OverflowError and ValueError can be produced by
+malformed literals).</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py function">
+<dt id="code.interact">
+<code class="sig-prename descclassname">code.</code><code class="sig-name descname">interact</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">banner</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">readfunc</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">local</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">exitmsg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#code.interact" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closely emulate the interactive Python interpreter.</p>
+<p>This is a backwards compatible interface to the InteractiveConsole
+class.  When readfunc is not specified, it attempts to import the
+readline module to enable GNU readline if it is available.</p>
+<p>Arguments (all optional, all default to None):</p>
+<p>banner – passed to InteractiveConsole.interact()
+readfunc – if not None, replaces InteractiveConsole.raw_input()
+local – passed to InteractiveInterpreter.__init__()
+exitmsg – passed to InteractiveConsole.interact()</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">code package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#code-main-module">code.Main module</a></li>
+<li><a class="reference internal" href="#module-code">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="modules.html"
+                        title="previous chapter">code</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="code.dao.html"
+                        title="next chapter">code.dao package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/code.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="code.dao.html" title="code.dao package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="code"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">BPP_Practica3 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">code package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Carlos Villacastín.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+dao package
+===========
+
+Submodules
+----------
+
+dao.CarsDAO module
+------------------
+
+.. automodule:: dao.CarsDAO
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+dao.PeopleDAO module
+--------------------
+
+.. automodule:: dao.PeopleDAO
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: dao
+   :members:
+   :undoc-members:
+   :show-inheritance:
